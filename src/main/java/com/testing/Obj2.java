@@ -6,12 +6,23 @@ package com.testing;
 
 public class Obj2 implements java.io.Serializable {
 
-    static final long serialVersionUID = 1L;
+	static final long serialVersionUID = 1L;
 
-    public Obj2() {
-    }
+	private com.testing.Obj1 foo;
 
+	public Obj2() {
+	}
 
+	public com.testing.Obj1 getFoo() {
+		return this.foo;
+	}
 
+	public void setFoo(com.testing.Obj1 foo) {
+		this.foo = foo;
+	}
+
+	public Obj2(com.testing.Obj1 foo) {
+		this.foo = foo;
+	}
 
 }

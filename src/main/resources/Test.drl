@@ -7,5 +7,5 @@ rule "TestRule"
 when
    $o : Obj2()
 then
-   System.out.println($o.foo.?foo)
+   System.out.println($o.foo.?foo);
 end

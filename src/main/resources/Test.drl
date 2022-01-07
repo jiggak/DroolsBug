@@ -1,11 +1,13 @@
-import com.testing.Obj2;
+import com.testing.Obj3;
 
 rule "TestRule"
    no-loop true
    ruleflow-group "TestRuleGroup"
    dialect "mvel"
 when
-   $o : Obj2()
+   $o : Obj3()
 then
-   System.out.println($o.foo.?foo);
+   System.out.println("got here1 " + $o.foo.foo);
+   x = $o.foo.?foo.foo;
+   System.out.println("got here2 " + x);
 end

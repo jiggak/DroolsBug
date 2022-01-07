@@ -7,7 +7,7 @@ rule "TestRule"
 when
    $o : Obj3()
 then
-   System.out.println("got here1 " + $o.foo.foo);
-   x = $o.foo.?foo.foo;
+   System.out.println("got here1 " + $o.obj2.obj1);
+   x = $o.obj2.?obj1.s;
    System.out.println("got here2 " + x);
 end

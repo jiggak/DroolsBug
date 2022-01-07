@@ -8,21 +8,21 @@ public class Obj2 implements java.io.Serializable {
 
 	static final long serialVersionUID = 1L;
 
-	private com.testing.Obj1 foo;
+	private com.testing.Obj1 obj1;
 
 	public Obj2() {
 	}
 
-	public com.testing.Obj1 getFoo() {
-		return this.foo;
+	public com.testing.Obj1 getObj1() {
+		return this.obj1;
 	}
 
-	public void setFoo(com.testing.Obj1 foo) {
-		this.foo = foo;
+	public void setObj1(com.testing.Obj1 obj1) {
+		this.obj1 = obj1;
 	}
 
-	public Obj2(com.testing.Obj1 foo) {
-		this.foo = foo;
+	public Obj2(com.testing.Obj1 obj1) {
+		this.obj1 = obj1;
 	}
 
 }

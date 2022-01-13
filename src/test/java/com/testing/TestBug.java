@@ -25,7 +25,7 @@ public class TestBug {
    public void test1() {
       var o2 = new Obj2();
       var o3 = new Obj3();
-      o3.setFoo(o2);
+      o3.setObj2(o2);
 
       ksession.insert(o3);
 
@@ -37,13 +37,13 @@ public class TestBug {
    @Test
    public void test2() {
       var o1 = new Obj1();
-      o1.setFoo("bar");
+      o1.setS("bar");
 
       var o2 = new Obj2();
-      o2.setFoo(o1);
+      o2.setObj1(o1);
 
       var o3 = new Obj3();
-      o3.setFoo(o2);
+      o3.setObj2(o2);
 
       ksession.insert(o3);
 
